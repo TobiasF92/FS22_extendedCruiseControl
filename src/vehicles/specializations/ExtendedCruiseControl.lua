@@ -35,8 +35,8 @@ function ExtendedCruiseControl.registerEventListeners(vehicleType)
     SpecializationUtil.registerEventListener(vehicleType, "onLoad", ExtendedCruiseControl)
     SpecializationUtil.registerEventListener(vehicleType, "onReadStream", ExtendedCruiseControl)
     SpecializationUtil.registerEventListener(vehicleType, "onWriteStream", ExtendedCruiseControl)
-	SpecializationUtil.registerEventListener(vehicleType, "onReadUpdateStream", ExtendedCruiseControl)
-	SpecializationUtil.registerEventListener(vehicleType, "onWriteUpdateStream", ExtendedCruiseControl)
+    SpecializationUtil.registerEventListener(vehicleType, "onReadUpdateStream", ExtendedCruiseControl)
+    SpecializationUtil.registerEventListener(vehicleType, "onWriteUpdateStream", ExtendedCruiseControl)
     SpecializationUtil.registerEventListener(vehicleType, "onPreUpdate", ExtendedCruiseControl)
     SpecializationUtil.registerEventListener(vehicleType, "onPostUpdate", ExtendedCruiseControl)
     SpecializationUtil.registerEventListener(vehicleType, "onLeaveVehicle", ExtendedCruiseControl)
@@ -92,7 +92,7 @@ function ExtendedCruiseControl:onLoad(savegame)
     spec.activeSpeedGroup = #spec.cruiseSpeedGroups
     spec.activeSpeedGroupSent = spec.activeSpeedGroup
 
-	spec.dirtyFlag = self:getNextDirtyFlag()
+    spec.dirtyFlag = self:getNextDirtyFlag()
     spec.lastFrameDirty = false
 
     if savegame ~= nil then
@@ -361,6 +361,7 @@ function ExtendedCruiseControl:updateActionEventTexts()
     if spec.resetIsDirty or spec.doReset or spec.cruiseControlActionEventId == nil then
         return
     end
+
     local permanentTextActive = not spec.permanentActive and not spec.raisedPermanentControl
     g_inputBinding:setActionEventTextVisibility(spec.permanentCruiseControlActionEventId, permanentTextActive)
 

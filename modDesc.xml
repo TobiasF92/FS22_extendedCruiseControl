@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="69">
     <author>Vertex Dezign</author>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
 
     <title>
         <en>Extended Cruise Control</en>
@@ -12,11 +12,15 @@
 A total of three speed memories are now available, which can be set individually.
 For easier driving during special work, it is now also possible to use permanent cruise control, which is not switched off when the brake is applied and then accelerates back to the desired speed.
 
+Changelog (1.0.1.0):
+- fixed mod description
 ]]></en>
         <de><![CDATA[Mit dem 'Extended Cruise Control' wird die Funktionalität des Tempomats erweitert.
 Insgesamt sind nun drei Geschwindigkeitsspeicher verfügbar, die einzeln eingestellt werden können.
 Für einfacheres Fahren bei speziellen Arbeiten ist nun auch die Nutzung eines permanenten Tempomats möglich, dieser wird durch Betätigung der Bremse nicht abgeschaltet und beschleunigt anschließend wieder auf die voreingestellte Geschwindigkeit.
 
+Changelog (1.0.1.0):
+- Modbeschreibung korrigiert
 ]]></de>
     </description>
 
