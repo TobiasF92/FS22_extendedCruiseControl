@@ -48,10 +48,10 @@ Für einfacheres Fahren bei speziellen Arbeiten ist nun auch die Nutzung eines p
         <actionBinding action="ECC_TOGGLE_CRUISECONTROL_3">
             <binding device="KB_MOUSE_DEFAULT" input="KEY_3"/>
         </actionBinding>
-		<actionBinding action="ECC_AXIS_CRUISECONTROL">
-			<binding device="KB_MOUSE_DEFAULT" input="KEY_KP_plus" axisComponent="+" neutralInput="0" index="1"/>
-			<binding device="KB_MOUSE_DEFAULT" input="KEY_KP_minus" axisComponent="-" neutralInput="0" index="1"/>
-		</actionBinding>
+        <actionBinding action="ECC_AXIS_CRUISECONTROL">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_KP_plus" axisComponent="+" neutralInput="0" index="1"/>
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_KP_minus" axisComponent="-" neutralInput="0" index="1"/>
+        </actionBinding>
     </inputBinding>
 
     <l10n>
