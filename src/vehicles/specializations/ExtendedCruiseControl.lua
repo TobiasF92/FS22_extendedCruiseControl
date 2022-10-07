@@ -293,6 +293,7 @@ function ExtendedCruiseControl:onRegisterActionEvents(isActiveForInput, isActive
         end
 
         if isActiveForInputIgnoreSelection then
+            -- Todo: maybe add powered action events
             local _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.ECC_RAISE_PERMANENT, self, ExtendedCruiseControl.actionEventRaisePermanent, false, true, true, true, nil)
             g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_NORMAL)
             g_inputBinding:setActionEventActive(actionEventId, not spec.permanentActive)
@@ -304,6 +305,10 @@ function ExtendedCruiseControl:onRegisterActionEvents(isActiveForInput, isActive
                 g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_LOW)
                 spec.cruiseControlActionEventId[i] = actionEventId
             end
+
+            _, actionEventId = self:addActionEvent(spec.actionEvents, InputAction.ECC_TOGGLE_CRUISECONTROL_LAST, self, ExtendedCruiseControl.actionEventCruiseControlGroup, false, true, false, true, nil)
+            g_inputBinding:setActionEventTextPriority(actionEventId, GS_PRIO_LOW)
+            spec.lastCruiseControlActionEventId = actionEventId
 
             ExtendedCruiseControl.updateActionEventTexts(self)
 
@@ -334,6 +339,9 @@ function ExtendedCruiseControl:actionEventCruiseControlGroup(actionName, inputVa
 
     elseif actionName == InputAction.ECC_TOGGLE_CRUISECONTROL_2 then
         groupIndex = 2
+        
+    elseif actionName == InputAction.ECC_TOGGLE_CRUISECONTROL_LAST then
+        groupIndex = spec.activeSpeedGroup
     end
 
     if not spec.resetIsDirty and groupIndex == spec.activeSpeedGroup then
@@ -382,6 +390,16 @@ function ExtendedCruiseControl:updateActionEventTexts()
         end
 
         g_inputBinding:setActionEventTextVisibility(actionEventId, cruiseControlOff or isActiveGroup)
+        g_inputBinding:setActionEventText(actionEventId, text)
+    end
+
+    if spec.lastCruiseControlActionEventId ~= nil then
+        local text = g_i18n:getText("action_activateCruiseControlLast", self.customEnvironment)
+        if spec.raisedPermanentControl then
+            text = g_i18n:getText("action_activatePermanentCruiseControlLast", self.customEnvironment)
+        end
+
+        g_inputBinding:setActionEventTextVisibility(actionEventId, cruiseControlOff)
         g_inputBinding:setActionEventText(actionEventId, text)
     end
 end

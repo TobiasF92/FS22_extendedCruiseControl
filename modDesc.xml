@@ -14,6 +14,7 @@ For easier driving during special work, it is now also possible to use permanent
 
 Changelog (1.0.1.0):
 - fixed mod description
+- added key binding to reactivate last used tempomat
 ]]></en>
         <de><![CDATA[Mit dem 'Extended Cruise Control' wird die Funktionalität des Tempomats erweitert.
 Insgesamt sind nun drei Geschwindigkeitsspeicher verfügbar, die einzeln eingestellt werden können.
@@ -21,6 +22,7 @@ Für einfacheres Fahren bei speziellen Arbeiten ist nun auch die Nutzung eines p
 
 Changelog (1.0.1.0):
 - Modbeschreibung korrigiert
+- Eine Taste hinzugefügt, um den zuletzt genutzten Tempomaten erneut zu aktivieren
 ]]></de>
     </description>
 
@@ -37,6 +39,7 @@ Changelog (1.0.1.0):
         <action name="ECC_TOGGLE_CRUISECONTROL_2" category="VEHICLE" axisType="HALF"/>
         <action name="ECC_TOGGLE_CRUISECONTROL_3" category="VEHICLE" axisType="HALF"/>
         <action name="ECC_AXIS_CRUISECONTROL" category="VEHICLE" axisType="FULL"/>
+        <action name="ECC_TOGGLE_CRUISECONTROL_LAST" category="VEHICLE" axisType="HALF"/>
     </actions>
 
     <inputBinding>
@@ -51,6 +54,9 @@ Changelog (1.0.1.0):
         </actionBinding>
         <actionBinding action="ECC_TOGGLE_CRUISECONTROL_3">
             <binding device="KB_MOUSE_DEFAULT" input="KEY_3"/>
+        </actionBinding>
+        <actionBinding action="ECC_TOGGLE_CRUISECONTROL_LAST">
+            <binding device="KB_MOUSE_DEFAULT" input=""/>
         </actionBinding>
         <actionBinding action="ECC_AXIS_CRUISECONTROL">
             <binding device="KB_MOUSE_DEFAULT" input="KEY_KP_plus" axisComponent="+" neutralInput="0" index="1"/>
@@ -67,6 +73,10 @@ Changelog (1.0.1.0):
             <en>Deactivate cruise control %d</en>
             <de>Tempomat %d deaktivieren</de>
         </text>
+        <text name="action_activateCruiseControlLast">
+            <en>Activate last cruise control</en>
+            <de>Letzten Tempomaten aktivieren</de>
+        </text>
         <text name="action_deactivatePermanentCruiseControlN">
             <en>Deactivate permanent cruise control %d</en>
             <de>Permanenten Tempomaten %d deaktivieren</de>
@@ -74,6 +84,10 @@ Changelog (1.0.1.0):
         <text name="action_activatePermanentCruiseControlN">
             <en>Activate permanent cruise control %d</en>
             <de>Permanenten Tempomaten %d aktivieren</de>
+        </text>
+        <text name="action_activatePermanentCruiseControlLast">
+            <en>Activate permanent last cruise control</en>
+            <de>Permanenten letzten Tempomaten aktivieren</de>
         </text>
         <text name="action_permanentCruiseControl">
             <en>Hold to toggle permanent cruise control</en>
@@ -94,6 +108,10 @@ Changelog (1.0.1.0):
         <text name="input_ECC_TOGGLE_CRUISECONTROL_3">
             <en>Cruise control 3</en>
             <de>Tempomat 3</de>
+        </text>
+        <text name="input_ECC_TOGGLE_CRUISECONTROL_LAST">
+            <en>Last Cruise control</en>
+            <de>Letzer Tempomat</de>
         </text>
         <text name="input_ECC_AXIS_CRUISECONTROL_1">
             <en>Increase cruise control speed</en>
