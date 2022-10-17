@@ -7,6 +7,6 @@ For easier driving during special work, it is now also possible to use permanent
 - fixed mod description
 
 
-# Copyright
+## Copyright
 
 Copyright (c) 2022, John Deere 6930. All rights reserved.
