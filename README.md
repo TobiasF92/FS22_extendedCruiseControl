@@ -5,6 +5,7 @@ For easier driving during special work, it is now also possible to use permanent
 
 ### Changelog (1.0.1.0):
 - fixed mod description
+- added key binding to reactivate last used tempomat
 
 
 ## Copyright
