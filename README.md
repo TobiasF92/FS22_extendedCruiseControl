@@ -13,4 +13,4 @@ For easier driving during special work, it is now also possible to use permanent
 Copyright (c) 2022, John Deere 6930. All rights reserved.
 
 
-***Thanks goes to: Flowsen (for the ui elements)***
+***Thanks goes to: Flowsen (for the icon)***
