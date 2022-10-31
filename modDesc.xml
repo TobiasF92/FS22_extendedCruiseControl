@@ -15,7 +15,10 @@ For easier driving during special work, it is now also possible to use permanent
 Changelog (1.0.1.0):
 - fixed mod description
 - added key binding to reactivate last used tempomat
-]]></en>
+
+Changelog (1.0.2.0):
+- added polish translations]]>
+        </en>
         <de><![CDATA[Mit dem 'Extended Cruise Control' wird die Funktionalität des Tempomats erweitert.
 Insgesamt sind nun drei Geschwindigkeitsspeicher verfügbar, die einzeln eingestellt werden können.
 Für einfacheres Fahren bei speziellen Arbeiten ist nun auch die Nutzung eines permanenten Tempomats möglich, dieser wird durch Betätigung der Bremse nicht abgeschaltet und beschleunigt anschließend wieder auf die voreingestellte Geschwindigkeit.
@@ -23,7 +26,21 @@ Für einfacheres Fahren bei speziellen Arbeiten ist nun auch die Nutzung eines p
 Changelog (1.0.1.0):
 - Modbeschreibung korrigiert
 - Eine Taste hinzugefügt, um den zuletzt genutzten Tempomaten erneut zu aktivieren
-]]></de>
+
+Changelog (1.0.2.0):
+- Polnische Übersetzung hinzugefügt]]>
+        </de>
+	    <pl><![CDATA[Extended Cruise Control' rozszerza funkcjonalność podstawowego tempomatu.
+Teraz są dostępne 3 pamięci tempomatu, w których możesz ustawić prędkość niezależnie od pozostałych.
+Dla łatwiejszej jazdy podczas specjalnych prac, jest dostępny stały tempomat, który nie jest rozłączany po wciśnięciu hamulca a po jego zwolnieniu pojazd przyspiesza z powrotem do zadanej prędkości.
+
+Changelog (1.0.1.0):
+- fixed mod description
+- added key binding to reactivate last used tempomat
+
+Changelog (1.0.2.0):
+- added polish translations]]>
+        </pl>
     </description>
 
     <iconFilename>icon_extendedCruiseControl.png</iconFilename>
@@ -68,58 +85,72 @@ Changelog (1.0.1.0):
         <text name="action_activateCruiseControlN">
             <en>Activate cruise control %d</en>
             <de>Tempomat %d aktivieren</de>
+            <pl>Aktywuj tempomat %d</pl>
         </text>
         <text name="action_deactivateCruiseControlN">
             <en>Deactivate cruise control %d</en>
             <de>Tempomat %d deaktivieren</de>
+            <pl>Dezaktywuj tempomat %d</pl>
         </text>
         <text name="action_activateCruiseControlLast">
             <en>Activate last cruise control</en>
             <de>Letzten Tempomaten aktivieren</de>
+            <pl>Aktywuj poprzedni tempomat</pl>
         </text>
         <text name="action_deactivatePermanentCruiseControlN">
             <en>Deactivate permanent cruise control %d</en>
             <de>Permanenten Tempomaten %d deaktivieren</de>
+            <pl>Dezaktywuj stały tempomat %d</pl>
         </text>
         <text name="action_activatePermanentCruiseControlN">
             <en>Activate permanent cruise control %d</en>
             <de>Permanenten Tempomaten %d aktivieren</de>
+            <pl>Aktywuj stały tempomat %d</pl>
         </text>
         <text name="action_activatePermanentCruiseControlLast">
             <en>Activate permanent last cruise control</en>
             <de>Permanenten letzten Tempomaten aktivieren</de>
+            <pl>Aktywuj poprzedni stały tempomat</pl>
         </text>
         <text name="action_permanentCruiseControl">
             <en>Hold to toggle permanent cruise control</en>
             <de>Halten um permanenten Tempomaten umzsuchalten</de>
+            <pl>Przytrzymaj, aby aktywować stały tempomat</pl>
         </text>
         <text name="input_ECC_RAISE_PERMANENT">
             <en>Permanent cruise control</en>
             <de>Permanenter Tempomat</de>
+            <pl>Stały tempomat</pl>
         </text>
         <text name="input_ECC_TOGGLE_CRUISECONTROL_1">
             <en>Cruise control 1</en>
             <de>Tempomat 1</de>
+            <pl>Tempomat 1</pl>
         </text>
         <text name="input_ECC_TOGGLE_CRUISECONTROL_2">
             <en>Cruise control 2</en>
             <de>Tempomat 2</de>
+            <pl>Tempomat 2</pl>
         </text>
         <text name="input_ECC_TOGGLE_CRUISECONTROL_3">
             <en>Cruise control 3</en>
             <de>Tempomat 3</de>
+            <pl>Tempomat 3</pl>
         </text>
         <text name="input_ECC_TOGGLE_CRUISECONTROL_LAST">
             <en>Last Cruise control</en>
             <de>Letzer Tempomat</de>
+            <pl>Poprzedni tempomat</pl>
         </text>
         <text name="input_ECC_AXIS_CRUISECONTROL_1">
             <en>Increase cruise control speed</en>
             <de>Tempomat Geschwindigkeit erhöhen</de>
+            <pl>Zwiększ prędkość tempomatu</pl>
         </text>
         <text name="input_ECC_AXIS_CRUISECONTROL_2">
             <en>Decrease cruise control speed</en>
             <de>Tempomat Geschwindigkeit vermindern</de>
+            <pl>Zmniejsz prędkość tempomatu</pl>
         </text>
     </l10n>
 </modDesc>
